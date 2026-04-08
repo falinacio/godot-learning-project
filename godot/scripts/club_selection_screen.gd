@@ -5,6 +5,11 @@
 
 extends Control
 
+# Explicitly preload Club so its type is available in this script's scope.
+# In Godot 4, class_name registers the type globally, but preload guarantees
+# the type is resolved even before the editor completes its script scan.
+const Club = preload("res://scripts/club.gd")
+
 # Signal emitted when the player confirms their club selection.
 # Other nodes (e.g. GameManager) can connect to this to respond to the selection.
 signal club_selected(club: Club)

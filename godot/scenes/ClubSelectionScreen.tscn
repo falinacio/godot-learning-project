@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=7 format=3]
 
 [ext_resource type="Script" path="res://scripts/club_selection_screen.gd" id="1_sel"]
+[ext_resource type="Resource" path="res://resources/clubs/flamengo_1980.tres" id="2_flamengo"]
+[ext_resource type="Resource" path="res://resources/clubs/cruzeiro_2003.tres" id="3_cruzeiro"]
+[ext_resource type="Resource" path="res://resources/clubs/atletico_mg_1978.tres" id="4_atletico"]
+[ext_resource type="Resource" path="res://resources/clubs/sao_paulo_1992.tres" id="5_saopaulo"]
 
 ; ClubSelectionScreen — Main scene for club selection.
 ; Node structure matches @onready references in club_selection_screen.gd.
@@ -14,6 +18,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sel")
+available_clubs = [ExtResource("2_flamengo"), ExtResource("3_cruzeiro"), ExtResource("4_atletico"), ExtResource("5_saopaulo")]
 
 ; Left panel: list of available clubs
 [node name="ClubList" type="ItemList" parent="."]
