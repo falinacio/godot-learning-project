@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Club" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/club.gd" id="1_club"]
+
+[resource]
+script = ExtResource("1_club")
+name = "Cruzeiro"
+period = "2003"
+description = "O Cruzeiro de Alex e Ricardinho. Bicampeão brasileiro em 2003 com um dos maiores elencos da história do clube celeste, consolidando-se como uma das maiores equipes dos anos 2000."

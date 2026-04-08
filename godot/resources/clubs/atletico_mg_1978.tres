@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Club" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/club.gd" id="1_club"]
+
+[resource]
+script = ExtResource("1_club")
+name = "Atlético Mineiro"
+period = "1978-1983"
+description = "O Galo de Reinaldo, Éder Aleixo e João Leite. Campeão brasileiro de 1971, com uma geração lendária que dominou o futebol mineiro e nacional no final dos anos 70 e início dos 80."

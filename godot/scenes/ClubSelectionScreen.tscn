@@ -1,0 +1,71 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/club_selection_screen.gd" id="1_sel"]
+
+; ClubSelectionScreen — Main scene for club selection.
+; Node structure matches @onready references in club_selection_screen.gd.
+; Root is a full-rect Control with ClubList, Details, and ConfirmButton as direct children.
+
+[node name="ClubSelectionScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sel")
+
+; Left panel: list of available clubs
+[node name="ClubList" type="ItemList" parent="."]
+layout_mode = 1
+anchor_bottom = 0.9
+offset_right = 380.0
+grow_vertical = 2
+
+; Right panel: details of the selected club
+[node name="Details" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchor_right = 1.0
+anchor_bottom = 0.9
+offset_left = 400.0
+grow_horizontal = 2
+grow_vertical = 2
+
+; Club name displayed in Portuguese (BR) as per project conventions
+[node name="ClubName" type="Label" parent="Details"]
+layout_mode = 2
+text = "Selecione um clube"
+theme_override_font_sizes/font_size = 22
+
+[node name="ClubPeriod" type="Label" parent="Details"]
+layout_mode = 2
+text = ""
+
+[node name="ClubDescription" type="Label" parent="Details"]
+layout_mode = 2
+text = ""
+autowrap_mode = 3
+
+; Placeholder for club crest image
+[node name="ClubCrest" type="TextureRect" parent="Details"]
+layout_mode = 2
+custom_minimum_size = Vector2(128, 128)
+expand_mode = 1
+stretch_mode = 5
+
+; Placeholder for club mascot image
+[node name="ClubMascot" type="TextureRect" parent="Details"]
+layout_mode = 2
+custom_minimum_size = Vector2(128, 128)
+expand_mode = 1
+stretch_mode = 5
+
+; Confirm button — disabled until a club is selected (controlled by script)
+[node name="ConfirmButton" type="Button" parent="."]
+layout_mode = 1
+anchor_top = 0.9
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Confirmar"

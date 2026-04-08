@@ -1,0 +1,16 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the editor will apply validation and more formatting.
+
+config_version=5
+
+[application]
+
+config/name="Deckbuilder Prototype"
+config/description="Football-themed deckbuilder inspired by Brazilian football of the 80s. All code in English; UI in Portuguese (BR)."
+run/main_scene="res://scenes/ClubSelectionScreen.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+
+[rendering]
+
+renderer/rendering_method="forward_plus"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Club" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/club.gd" id="1_club"]
+
+[resource]
+script = ExtResource("1_club")
+name = "São Paulo"
+period = "1992-1993"
+description = "O São Paulo de Raí, Cafu e Müller. Bicampeão da Libertadores e do Mundial em 1992 e 1993, considerado um dos maiores clubes do mundo naquele período."
